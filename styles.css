@@ -1,0 +1,340 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+#search {
+
+    font-size: 1em;
+}
+
+#search-button {
+    padding: 5px 10px;
+    font-size: 1em;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 60px; /* Adjusted sidebar width */
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.category-image {
+    width: 100%;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* Keep circular image */
+    margin-bottom: 5px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 5px;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-info {
+    padding: 10px;
+    margin-top: -10px;
+    font-size:1rem ;
+}
+
+.price {
+    font-weight: bold;
+}
+
+/* CSS */
+
+.add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+.quantity {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+
+
+.cart-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-footer button {
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-footer button:hover {
+    background-color: #f5f5f5;
+}
+
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.floating-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.floating-footer button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Styles for cart modal */
+#cart-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+}
+.modal-content {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: relative;
+}
+.modal-content h2 {
+    margin-top: 0;
+}
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+
+/* Add styles for the increment and decrement buttons container */
+.quantity-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1px;
+    background-color: #f5f5f5;
+    justify-content: space-between;
+}
+
+.quantity-container button {
+    background-color: #fff;
+    border: none;
+    color: #007bff;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-container button:hover {
+    background-color: #e2e6ea;
+}
+
+.quantity-container .quantity {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Existing styles */
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.product-image {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container for price and buttons */
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+/* Styling for price */
+.price {
+    font-size: 0.9em; /* Smaller font size if needed */
+    margin: 0;
+    flex: 1; /* Allow price to take up available space */
+}
+
+/* Container for quantity buttons */
+.quantity-container {
+    display: flex;
+    align-items: center;
+    margin-left: 11px; /* Add space between price and buttons */
+}
+
+/* Styling for quantity buttons */
+.quantity-container button {
+    color: rgb(95, 91, 91);
+    border: none;
+    padding: 3px 6px; /* Smaller padding */
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.8em; /* Smaller font size */
+    min-width: 24px; /* Minimum width to ensure button is not too small */
+    min-height: 24px; /* Minimum height to ensure button is not too small */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-container .quantity {
+    font-size: 0.9em; /* Smaller font size */
+}
+.logo-placeholder {
+    width: 120px; /* Adjust to fit your design */
+    height: 40px; /* Adjust to fit your design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    overflow: hidden; /* Hide any overflow */
+}
+
+.logo-placeholder img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure the image scales while preserving aspect ratio */
+}

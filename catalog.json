@@ -1,0 +1,58 @@
+[
+    {
+        "category": "appetizers",
+        "products": [
+            {
+                "name": "Spring Rolls",
+                "description": "Crunchy spring rolls with vegetables.",
+                "price": 5.99,
+                "image": "https://www.bigbasket.com/media/uploads/p/m/40016990_3-mccain-french-fries.jpg?tr=w-1080,q=80"
+            },
+            {
+                "name": "Fries",
+                "description": "Crunchy fries with a golden crisp.",
+                "price": 4.99,
+                "image": "https://www.bigbasket.com/media/uploads/p/m/40016990_3-mccain-french-fries.jpg?tr=w-1080,q=80"
+            }
+        ]
+    },
+    {
+        "category": "main-courses",
+        "products": [
+            {
+                "name": "Spaghetti Bolognese",
+                "description": "Classic Italian pasta with meat sauce.",
+                "price": 8.99,
+                "image": "https://example.com/spaghetti.jpg"
+            }
+        ]
+    }
+    {
+        "category": "appetizers",
+        "products": [
+            {
+                "name": "Spring Rolls",
+                "description": "Crunchy spring rolls with vegetables.",
+                "price": 5.99,
+                "image": "https://www.bigbasket.com/media/uploads/p/m/40016990_3-mccain-french-fries.jpg?tr=w-1080,q=80"
+            },
+            {
+                "name": "Fries",
+                "description": "Crunchy fries with a golden crisp.",
+                "price": 4.99,
+                "image": "https://www.bigbasket.com/media/uploads/p/m/40016990_3-mccain-french-fries.jpg?tr=w-1080,q=80"
+            }
+        ]
+    },
+    {
+        "category": "main-courses",
+        "products": [
+            {
+                "name": "Spaghetti Bolognese",
+                "description": "Classic Italian pasta with meat sauce.",
+                "price": 8.99,
+                "image": "https://example.com/spaghetti.jpg"
+            }
+        ]
+    }
+]
